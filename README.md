@@ -42,15 +42,27 @@ This is constant time since it is a one step procedure regardless of the length 
 
 This algorithm checks if a number is prime. The time is linear in the worst case (namely when the number is actually prime), constant for best case(even numbers), and in between for all the rest.
 
-Description of algorithm:
 
-1. Can we win in one step (A to C or B to C)? If so, do that and stop.
-2. Test each of the six theoretically possible moves (A to B) (A to C) (B to A) (B to C) (C to A) (C to B)
-  A. test if the move is legal
-  B. Test if move makes us more distant from victory (removing largest piece or second largest when 2 are there from C)
-  C. If so, go to 3. Otherwise skip that move.
-3. Can we win in one step from those? If so, do that and stop.
-4. If not, take all results and return to 1.
+## 11. Tower of Hanoi
+1. Description of algorithm:
+
+    1. If there is only one disk, solve it by moving from the source to destination.
+
+    2. If there is more than one disk, move all the disks except one to the intermediate spot then move the largest disk to the destination.
+
+    3. Move the intermediate disks to the destination.
+
+2. Given 5 disks, after 7 recursive calls, there are 3 disks on the destination and 2 disks on the source.
+
+3. 3 disks: 7 moves
+    4 disks: 15 moves
+      5 disks : 31 moves
+
+    n disks = 2^n-1
+
+4. O(2^n)
+
+
 
 
 

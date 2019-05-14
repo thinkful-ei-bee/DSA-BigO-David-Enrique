@@ -1,7 +1,9 @@
 'use strict';
 
-function solveTower(numDisks, A, B, C) {
 
+
+function solveTower(numDisks, A, B, C) {
+  
   if (numDisks === 1) {
     return [[A, C]];
   }
@@ -11,4 +13,4 @@ function solveTower(numDisks, A, B, C) {
   return intermediateSol.concat(solveTower(numDisks - 1, B, A, C));
 }
 
-console.log(solveTower(7, 'A', 'B', 'C'));
+console.log(solveTower(4, 'A', 'B', 'C'));
