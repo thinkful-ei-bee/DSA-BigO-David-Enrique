@@ -62,8 +62,26 @@ This algorithm checks if a number is prime. The time is linear in the worst case
 
 4. O(2^n)
 
+## 12. Iterative version = iterativeSolutions.js
 
+## 13. Recursive Big O
 
+Counting Sheep: linear
+Factorial: linear
+Fibonacci: in between n^2 and 2^n
+Power Calculator: constant for base, linear for exponent
+Reverse String: linear
+String Splitter: linear in number of separations
+Triangular Number: linear
 
+## 14. Iterative Big O
+
+Counting Sheep: linear
+Factorial: linear
+Fibonacci: linear
+Power Calculator: linear
+Reverse String: linear
+String Splitter: linear
+Triangular Number: linear
 
 
